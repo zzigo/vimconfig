@@ -218,7 +218,8 @@ let g:NERDTreeIgnore = ['^\.DS_Store$', '^tags$', '\.git$[[dir]]', '\.idea$[[dir
 " Wrap in try/catch to avoid errors on initial install before plugin is available
 try
 
-" === Vim airline ==== "
+"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
+ === Vim airline ==== "
 " Enable extensions
 let g:airline_extensions = ['branch', 'hunks', 'coc']
 

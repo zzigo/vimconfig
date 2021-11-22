@@ -1,4 +1,4 @@
-"BASICS  ======================================
+"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BASICS  ======================================
 set mouse
 set clipboard+=unnamedplus
 "save with zz shortcut"

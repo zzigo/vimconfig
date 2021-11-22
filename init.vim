@@ -4,7 +4,7 @@ set clipboard+=unnamedplus
 "save with zz shortcut"
 nnoremap zz :update!<cr>
 
-"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SHORTCUTS ====================================="
+"SHORTCUTS ====================================="
 let g:mapleader=',' " remap leader key to , 
 nmap <leader>n :NERDTreeToggle<CR> "  <leader>n - Toggle NERDTree on/off
 nmap <leader>f :NERDTreeFind<CR> "<leader>f - Opens current file location in NERDTree

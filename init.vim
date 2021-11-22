@@ -42,12 +42,12 @@ Plug 'Shougo/denite.nvim' " Denite - Fuzzy finding, buffer management
 Plug 'Shougo/neosnippet' " Snippet support
 Plug 'Shougo/neosnippet-snippets' " Snippet support
 Plug 'Shougo/echodoc.vim' " Print function signatures in echo area
-
+Plug 'taku-o/vim-copypath' "copy path from NERDTREE 
 " git ---------------------------------- "
 " Enable git changes to be shown in sign column
-Plug 'mhinz/vim-signify'
+Plug 'mhinz/vim-signify' "uses sign column to indicate added, modified and removed
 Plug 'tpope/vim-fugitive'
-
+Plug 'airblade/vim-gitgutter' "other option to see git changes on gutter
 " java -------------------------------- "
 " Typescript syntax highlighting
 Plug 'HerringtonDarkholme/yats.vim'

@@ -16,7 +16,7 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 nmap <silent> <leader>b :Bracey<CR> "Bracey shortcut"
-
+nnoremap <leader>g :<c-u>:Gwrite<bar>Git commit -m WIP<bar>Gpush<cr> //map commit push to github
 
 
 "PLUGINS ==========================================
@@ -380,7 +380,7 @@ endtry
 "   <leader>j - Search current directory for occurences of word under cursor
 nmap ; :Denite buffer<CR>
 nmap <leader>t :DeniteProjectDir file/rec<CR>
-nnoremap <leader>g :<C-u>Denite grep:. -no-empty<CR>
+"nnoremap <leader>g :<C-u>Denite grep:. -no-empty<CR>
 nnoremap <leader>j :<C-u>DeniteCursorWord grep:.<CR>
 
 " Define mappings while in 'filter' mode

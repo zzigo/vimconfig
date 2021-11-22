@@ -16,7 +16,7 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 nmap <silent> <leader>b :Bracey<CR> "Bracey shortcut"
-nnoremap <leader>g :<c-u>:Gwrite<bar>Git commit -m WIP<bar>Gpush<cr> //map commit push to github
+nnoremap <leader>g :<c-u>:Gwrite<bar>Git commit -m WIP<bar>Git push<cr> //map commit push to github
 
 
 "PLUGINS ==========================================

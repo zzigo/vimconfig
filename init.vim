@@ -4,7 +4,7 @@ set clipboard+=unnamedplus
 "save with zz shortcut"
 nnoremap zz :update!<cr>
 
-
+"commmit from nvim
 "SHORTCUTS ====================================="
 let g:mapleader=',' " remap leader key to , 
 nmap <leader>n :NERDTreeToggle<CR> "  <leader>n - Toggle NERDTree on/off

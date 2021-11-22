@@ -7,6 +7,9 @@ nnoremap zz :update!<cr>
 let g:mapleader=',' " remap leader key to , 
 nmap <leader>n :NERDTreeToggle<CR> "  <leader>n - Toggle NERDTree on/off
 nmap <leader>f :NERDTreeFind<CR> "<leader>f - Opens current file location in NERDTree
+nnoremap <leader>g :<c-u>:Gwrite<bar>Git commit -m WIP<bar>Git push<cr> //map commit push to github
+map <leader>r :NERDTreeFind<cr>
+
 noremap <Space> <PageDown> "<Space> - PageDown
 noremap - <PageUp> "PageUp
 nmap <C-h> <C-w>h " Quick window switching
@@ -14,10 +17,10 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 nmap <silent> <leader>b :Bracey<CR> "Bracey shortcut"
-nnoremap <leader>g :<c-u>:Gwrite<bar>Git commit -m WIP<bar>Git push<cr> //map commit push to github
 
 
 "PLUGINS ==========================================
+"
 " Install vim-plug if not found
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
@@ -203,15 +206,10 @@ let g:neosnippet#snippets_directory='~/.config/nvim/snippets'
 let g:neosnippet#enable_conceal_markers = 0
 
 " === NERDTree === "
-" Show hidden files/directories
-let g:NERDTreeShowHidden = 1
-
-" Remove bookmarks and help text from NERDTree
-let g:NERDTreeMinimalUI = 1
+let g:NERDTreeShowHidden = 1 " Show hidden files/directories
+let g:NERDTreeMinimalUI = 1 " Remove bookmarks and help text from NERDTree
 let g:NERDTreeChDirMode = 2
-
-" Custom icons for expandable/expanded directories
-let g:NERDTreeDirArrowExpandable = '⬏'
+let g:NERDTreeDirArrowExpandable = '⬏' " Custom icons for expandable/expanded directories
 let g:NERDTreeDirArrowCollapsible = '⬎'
 
 " Hide certain files and directories from NERDTree

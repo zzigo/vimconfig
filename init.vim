@@ -9,7 +9,6 @@ nmap <leader>n :NERDTreeToggle<CR> "  <leader>n - Toggle NERDTree on/off
 nmap <leader>f :NERDTreeFind<CR> "<leader>f - Opens current file location in NERDTree
 nnoremap <leader>g :<c-u>:Gwrite<bar>Git commit -m WIP<bar>Git push<cr> //map commit push to github
 map <leader>r :NERDTreeFind<cr>
-
 noremap <Space> <PageDown> "<Space> - PageDown
 noremap - <PageUp> "PageUp
 nmap <C-h> <C-w>h " Quick window switching
@@ -18,9 +17,7 @@ nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 nmap <silent> <leader>b :Bracey<CR> "Bracey shortcut"
 
-
 "PLUGINS ==========================================
-"
 " Install vim-plug if not found
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
@@ -218,8 +215,7 @@ let g:NERDTreeIgnore = ['^\.DS_Store$', '^tags$', '\.git$[[dir]]', '\.idea$[[dir
 " Wrap in try/catch to avoid errors on initial install before plugin is available
 try
 
-"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
- === Vim airline ==== "
+" === Vim airline ==== "
 " Enable extensions
 let g:airline_extensions = ['branch', 'hunks', 'coc']
 

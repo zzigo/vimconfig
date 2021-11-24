@@ -1,7 +1,7 @@
 set clipboard+=unnamedplus
 "save with zz shortcut"
 nnoremap zz :update!<cr>
-
+"change
 "SHORTCUTS ====================================="
 let g:mapleader=',' " remap leader key to , 
 nmap <leader>n :NERDTreeToggle<CR> "  <leader>n - Toggle NERDTree on/off
@@ -415,4 +415,13 @@ function! Matches(pat)
     call setloclist(0, [], ' ', {'items': b:lines})
     lopen
 endfunction
+
+
+
+
+syntax on
+filetype plugin on
+syntax enable
+au BufRead,BufNewFile *.js set filetype=javascript
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 
